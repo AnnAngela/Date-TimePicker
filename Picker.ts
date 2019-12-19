@@ -1,4 +1,4 @@
-class Picker {
+export default class Picker {
     public static readonly FORMAT: RegExp = /^(\d{4})-(\d{1,2})-(\d{1,2}) (\d{1,2}):(\d{1,2})$/;
     public static parse(str: string): Date {
         const match: RegExpMatchArray | null = str.match(Picker.FORMAT);
